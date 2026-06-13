@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Click Challenge</title>
+<style>
+body{
+    text-align:center;
+    font-family:Arial;
+    margin-top:100px;
+}
+button{
+    padding:12px 25px;
+    font-size:20px;
+}
+#no{
+    position:absolute;
+}
+</style>
+</head>
+<body>
+
+<h1>Can I watch tv?</h1>
+
+<button onclick="alert('😂 Thank you!')">
+YES
+</button>
+
+<button id="no" onclick="alert('🏆 Very bad!')">
+NO
+</button>
+
+<script>
+const noBtn = document.getElementById("no");
+
+noBtn.addEventListener("mouseover", () => {
+    noBtn.style.left = Math.random() * (window.innerWidth - 100) + "px";
+    noBtn.style.top = Math.random() * (window.innerHeight - 100) + "px";
+});
+</script>
+
+</body>
+</html>
